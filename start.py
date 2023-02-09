@@ -23,10 +23,10 @@ class Marks(Units):
       super().__init__(name,Maths, Eng ,Kisw ,Sci ,Cre)
       
       MathsMarks=int(input("Enter your Marks for Maths:"))
-      MathsMarks=int(input("Enter your Marks for Eng:"))
-      MathsMarks=int(input("Enter your Marks for Kisw:"))
-      MathsMarks=int(input("Enter your Marks for Sci:"))
-      MathsMarks=int(input("Enter your Marks for Cre:"))
+      EngMarks=int(input("Enter your Marks for Eng:"))
+      KiswMarks=int(input("Enter your Marks for Kisw:"))
+      SciMarks=int(input("Enter your Marks for Sci:"))
+      CreMarks=int(input("Enter your Marks for Cre:"))
       self.MathsMarks = MathsMarks
       self.EngMarks = EngMarks
       self.KiswMarks = KiswMarks
@@ -67,7 +67,7 @@ class Grade(Average):
      
   def printGrade(self):
     
-    print( "Hello" + " " + self.name +" "  + "Your total marks is" + " "+self.total+ " " + "you have   points" + " " +self.mean+ " " + "scoring grade" + " " + self.Grade)
+    print(  self.name , self.total , self.mean ,self.Grade)
 
 
 final=Grade("name", "Maths", "Eng" ,"Kisw" ,"Sci" ,"Cre" ,"MathsMarks", "EngMarks" ,"KiswMarks" ,"SciMarks" ,"CreMarks","total ","mean","Grade")
